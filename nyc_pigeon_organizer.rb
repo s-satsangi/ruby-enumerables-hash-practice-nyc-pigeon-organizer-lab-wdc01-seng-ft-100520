@@ -11,7 +11,14 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each_with_object({}) do |(key,value), pigeon_list|
       
     value.each do |title, names|
-    binding.pry  
+      names.each do |name|
+        #binding.pry
+        if !pigeon_list[name]
+          pigeon_list[name]={}
+        elsif !pigeon_list[name][key]
+          pigeon_list[name][key] = []
+        end
+      end
     end
   end
   
