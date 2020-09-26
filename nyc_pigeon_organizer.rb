@@ -18,9 +18,9 @@ def nyc_pigeon_organizer(pigeon_data)
         elsif !pigeon_list[name][key]
           pigeon_list[name][key] = []
         end
-        
+      debug.pry        
       pigeon_list[name][key].push(to_data)
-      debug.pry
+
       end
       
     end
