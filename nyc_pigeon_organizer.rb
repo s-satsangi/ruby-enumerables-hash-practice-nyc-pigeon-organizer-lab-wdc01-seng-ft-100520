@@ -19,9 +19,9 @@ def nyc_pigeon_organizer(pigeon_data)
         if !pigeon_list[name][key]
           pigeon_list[name][key] = []
         end
-      binding.pry        
+      #binding.pry        
       pigeon_list[name][key].push(to_data)
-      #binding.pry
+      binding.pry
       end
       
     end
