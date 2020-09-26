@@ -15,7 +15,8 @@ def nyc_pigeon_organizer(pigeon_data)
         #binding.pry
         if !pigeon_list[name]
           pigeon_list[name]={}
-        elsif !pigeon_list[name][key]
+        end
+        if !pigeon_list[name][key]
           pigeon_list[name][key] = []
         end
       binding.pry        
