@@ -21,7 +21,7 @@ def nyc_pigeon_organizer(pigeon_data)
         end
       #binding.pry        
       pigeon_list[name][key].push(to_data.to_s)
-      binding.pry
+      #binding.pry
       end
       
     end
