@@ -8,24 +8,24 @@ def nyc_pigeon_organizer(pigeon_data)
   #I thought made sense, but I couldn't get that working either.  
   #Implementing the solution from youtube :(
   
-  pigeon_data.each_with_object({}) do |(key,value), pigeon_list|
+  pigeon_list = pigeon_data.each_with_object({}) do |(key,value), pigeon_list_arr|
       
     value.each do |to_data, names|
       names.each do |name|
         #binding.pry
-        if !pigeon_list[name]
-          pigeon_list[name]={}
+        if !pigeon_list_arr[name]
+          pigeon_list_arr[name]={}
         end
-        if !pigeon_list[name][key]
-          pigeon_list[name][key] = []
+        if !pigeon_list_arr[name][key]
+          pigeon_list_arr[name][key] = []
         end
       #binding.pry        
-      pigeon_list[name][key].push(to_data.to_s)
+      pigeon_list_arr[name][key].push(to_data.to_s)
       #binding.pry
       end
       
     end
   end
-  #binding.pry
+  binding.pry
   #pigeon_list
 end
