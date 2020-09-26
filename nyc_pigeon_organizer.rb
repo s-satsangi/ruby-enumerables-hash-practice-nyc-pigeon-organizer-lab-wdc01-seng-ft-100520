@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(pigeon_data)
   #I thought made sense, but I couldn't get that working either.  
   #Implementing the solution from youtube :(
   
-  pigeon_data.each_with_object({}) |(key,value) pigeon_list|
+  pigeon_data.each_with_object({}) |(key,value), pigeon_list|
       
     value.each do |title, names|
     binding.pry  
